@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Fierce Overlay</title>
+    <meta charset="utf-8">
+		<meta name="theme-color" content="#111111">
+		<meta name="description" content="A general use overlay created by FierceThundr_">
+		<meta name="author" content="FierceThundr_">
+		<meta property="og:title" content="Fierce Overlay">
+		<meta property="og:url" content="https://fierce-overlay.glitch.me/">
+		<meta property="og:description" content="A general use overlay created by FierceThundr_">
+		<meta property="og:type" content="website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="balance.min.js"></script>
+    <script src="tmi.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  </head>
+  <body>
+    <div class="menu_container">
+      <!-- Message Display -->
+      <div class="message general" id="message">Test</div>
+      <!-- Death Count -->
+      <div class="death_wrapper general" id="death_wrapper">
+        <span id="death_count">0</span> Deaths
+      </div>
+      <!-- Timer Display -->
+      <div class="timer_wrapper general" id="timer_wrapper">
+        <span id="timer_display">00:00</span> <span id="timer_label"></span>
+      </div>
+      <!-- Raffle Display -->
+      <div class="menu_content general" id="raffle_content">
+        <div class="menu_title">
+          <div id="raffle_title">Untitled Raffle</div>
+        </div>
+        <div><ol class="menu_body" id="raffle_list"></ol></div>
+        <div class="menu_footer">
+          <div><span id="raffle_entries">0</span> Entries</div>
+          <div>!join to enter the raffle</div>
+        </div>
+      </div>
+      <!-- Queue Display -->
+      <div class="menu_content general" id="queue_content">
+        <div class="menu_title">
+          <div id="queue_title">Untitled Queue</div>
+        </div>
+        <ol class="menu_body" id="queue_list"></ol>
+        <div class="menu_footer">
+          <div><span id="queue_entries">0</span> Waiting</div>
+          <div>!wait to enter the queue</div>
+        </div>
+      </div>
+      <!-- Poll Display -->
+      <div class="menu_content general" id="poll_content">
+        <div class="menu_title">
+          <div id="poll_title">Untitled Poll</div>
+        </div>
+        <ol class="menu_body" id="poll_options"></ol>
+        <div class="menu_footer">
+          <div><span id="poll_votes">0</span> Votes</div>
+          <div>!vote [option #<span id="poll_multi"></span>]</div>
+          <div id="poll_timer">00:00</div>
+        </div>
+      </div>
+      <!-- Youtube Embed -->
+      <div class="general" id="youtube"></div>
+    </div>
+    <!-- Spinner Wheel -->
+    <div id="wheel_wrapper">
+      <div id="wheel_content"></div>
+    </div>
+    <!-- First Leaderboard -->
+    <div class="leaderboard_wrapper" id="leaderboard_wrapper">
+      <div class="leaderboard_title general">Early Chatter Leaderboard</div>
+      <div class="leaderboard_list" id="leaderboard_list">
+        <div>The_C0deHas</div>
+        <div>NotfoundanY</div>
+        <div>early-chatters</div>
+        <div>YetYou_Should</div>
+        <div>NeverSeeThis_</div>
+      </div>
+    </div>
+    <!-- Announcement Display -->
+    <div class="general" id="announcement"></div>
+    <!-- Note Display -->
+    <div class="general" id="note"></div>
+    <!-- Tweak Wrappers -->
+    <div id="tweak_content"></div>
+    <div id="tweak_chatterbox"></div>
+    <!-- Stream Seize -->
+    <div class="seize_wrapper" id="stream_seize">
+      <div class="seize_shutter">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="seize_content">
+        <div class="seize_inner">
+          <div class="seize_banner">
+            <img class="seize_warn" alt="" src="assets/seize_warning.svg">
+            <span>This stream has been siezed by the<br>coalition against cringe gamers at<br>the request of <span id="seize_user"><s>an anonymous user</s></span><br><br>Thank you for your cooperation</span>
+            <img class="seize_warn" alt="" src="assets/seize_warning.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Moderator Intros -->
+    <div id="intro_wrapper">
+      <style id="intro_style"></style>
+    </div>
+    <!-- Achievement Content -->
+    <div id="achievement">
+      <div class="animation">
+        <div class="circle">
+          <div class="img trophy_animate trophy_img">
+            <img class="trophy_1" alt="" src="assets/achievement_trophy_full.svg"/>
+            <img class="trophy_2" alt="" src="assets/achievement_trophy_part.svg"/>
+          </div>
+          <div class="img xbox_img">
+            <img alt="" src="assets/achievement_xbox.svg"/>
+          </div>
+          <div class="brilliant-wrap">
+            <div class="brilliant"></div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="achieve_info">
+            <span class="achieve_name"></span>
+            <span class="achieve_desc"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Debug Log -->
+    <p id="debug"></p>
+    <!-- Twitch Status -->
+    <div class="twitch_status general" id="twitch_status"></div>
+    <!-- Critical Error -->
+    <p id="critical_error">If you are seeing this message, a critical error has occured in the primary script for the overlay that has prevented it from starting properly. Please temporarily hide or disable the overlay and I will attempt to fix the issue as soon as I can.<br><br>Thank you for your understanding! ~FierceThundr_</p>
+  </body>
+</html>
