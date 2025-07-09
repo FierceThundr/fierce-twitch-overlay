@@ -1,0 +1,3 @@
+This repository is dedicated to my personal effort to have a bit of extra fun with the streamers I follow more regularly while helping out in return. This overlay is packed with a wide collection of features from raffles, polls, and various other widgets in addition to tools to allow live tweaks to functionality. While it is certainly not perfect, I do believe I can reasonably say that its features do make it a fun addition to those willing to explore and possibly fork it for yourself.
+
+As a well deserved nod, this project was formerly created for a streamer named Tres I used to follow. I hope we may meet you again in the future. And lastly RIP glitch, an amazing platform that made the original version of this project possible.
