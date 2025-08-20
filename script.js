@@ -49,6 +49,7 @@ var config = {
     "intro_rei":new Audio("assets/intro_rei.mp3"),
     "intro_julius":new Audio("assets/intro_julius.mp3"),
     "intro_retro":new Audio("assets/intro_retro.mp3"),
+    "intro_tengen":new Audio("assets/intro_tengen.mp3"),
     //Troll sound library
     "troll_discord":new Audio("assets/troll_discord.mp3"),
     "troll_butter":new Audio("assets/troll_butter.mp3"),
@@ -126,6 +127,7 @@ var config = {
       "!rei":{"user-id":["503717274"],"duration":6,"text":"Rei has arrived to gamble!","audio":"intro_rei","image":{"width":500,"height":500,"url":"assets/intro_rei.gif"},"css":"@keyframes intro_image{0%,100%{transform:translate(-50%,-50%)scale(0)}25%,85%{transform:translate(-50%,-50%)scale(1)}}"},
       "!julius":{"user-id":["125850048"],"duration":6,"text":"The Horror is here!","audio":"intro_julius","image":{"width":300,"height":300,"url":"assets/intro_julius.gif"},"css":"#intro_wrapper::before{border:15px solid;border-bottom:70px solid;border-color:#dfdfdf;border-radius:5px}#intro_wrapper::after{font-size:30px;color:black;}@keyframes intro_image{0%,100%{top:-400px;right:50px;left:unset;transform:unset}25%,85%{top:50px;transform:rotate(3deg)}}@keyframes intro_text{0%,100%{top:-70px;right:72px;left:unset;transform:unset}25%,85%{top:380px;transform:rotate(3deg)}}"},
       "!retro":{"user-id":["960794250"],"duration":7,"text":"Retro has joined the chat!","audio":"intro_retro","image":{"width":300,"height":300,"url":"assets/intro_retro.png"},"css":"#intro_wrapper::before{border-radius:100%;background-color:white;box-shadow:0 0 15px 15px #FFFFFF}"},
+      "!tengen":{"user-id":["960161888"],"duration":9.5,"text":"Tengen is back bitches!","audio":"intro_tengen","image":{"width":466,"height":350,"url":"assets/intro_tengen.gif"},"css":"@keyframes intro_image{0%{transform:translate(-50%,-100vw)}50%,85%{transform:translate(-50%,-50%)}100%{transform:translate(-50%,100vw)}}@keyframes intro_text{0%{transform:translate(-50%,-100vh)rotate(0deg)}50%{transform:translate(-50%,-50%)rotate(10deg)}85%{transform:translate(-50%,-50%)rotate(-5deg)}100%{transform:translate(-50%,100vh)rotate(0deg)}}#intro_wrapper::before{border-radius:30px}#intro_wrapper::after{color:blueviolet;-webkit-text-stroke:black 1px;font-family:Garamond,serif}"},
     },
     "cooldown":3600000 //1 Hour
   },
